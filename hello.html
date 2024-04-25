@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset = "utf-8">
+  <title>상품 주문</title>
+ </head>
+ <body>
+    <form>
+        <fieldset>
+            <legend>상품 선택</legend>
+            <p><b>주문할 상품을 선택해 주세요.</b></p>
+            <label><input type="checkbox" value="b_m">빡빡이 문수</label>
+            <label><input type="checkbox" value="g_m">감자 옹심 문수</label>
+            <label><input type="checkbox" value="h_m">운동하는 문수</label>
+            <label><input type="checkbox" value="c_m">코딩공부하는 문수</label>
+            <p><b>포장 선택</b></p>
+            <label><input type="radio" name="gift" value="yes">선물 포장</label>
+            <label><input type="radio" name="gift" value="no">선물 포장 안 함</label>
+        </fieldset>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    <label for="name">이름 : </label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="addr">배송 주소 : </label>
+                    <input type="text" id="addr" required>
+                </li>
+                <li>
+                    <label for="mail">이메일 주소 : </label>
+                    <input type="text" id="mail">
+                </li>
+                <li>
+                    <label for="phone">연락처 : </label>
+                    <input type="text" id="phone" placeholder="하이픈 빼고 입력해 주세요.(예:01012345678)">
+                </li>
+                <li>
+                    <label for="ymd">배송 날짜</label>
+                    <input type="date" id="ymd"><small>(주문일로부터 최소 3일 이후)</small>
+                </li>
+                <li>
+                    <label for="memo">메모</label>
+                    <textarea id="memo" cols="40" rows="4"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+    </form>
+ </body>
+</html>
