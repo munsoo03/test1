@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset = "utf-8">
+  <title>회원 가입</title>
+ </head>
+ <body>
+    <form>
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <ul>
+                <li>
+                    <label for="id">아이디 : </label>
+                    <input type="text" id="id" autofocus placeholder="3자 ~ 12자 사이" required>
+                </li>
+                <li>
+                    <label for="mail">이메일 : </label>
+                    <input type="text" id="mail" required>
+                </li>
+                <li>
+                    <label for="pwd">이메일 : </label>
+                    <input type="text" id="pwd" placeholder="문자와 숫자, 특수 기호 포함" required>
+                </li>
+                <li>
+                    <label for="pwdc">비밀번호 확인 : </label>
+                    <input type="text" id="pwdc" required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <input type="radio" name="mailing" id="mailing_y" value="mailing_yes">
+            <label for="mailing_y">메일 수신</label>
+            <input type="radio" name="mailing" id="mailing_n" value="mailing_no">
+            <label for="mailing_y">메일 수신 안 함</label>
+        </fieldset>
+        <input type="button" value="가입하기" onclick="window.open('hello.html')">
+        <input type="button" value="취소" onclick="self.close()">
+    </form>
+ </body>
+</html>
