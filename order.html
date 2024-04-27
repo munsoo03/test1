@@ -1,10 +1,21 @@
 <!doctype html>
 <html lang="ko">
- <head>
-  <meta charset = "utf-8">
-  <title>상품 주문</title>
- </head>
- <body>
+<head>
+<meta charset = "utf-8">
+<title>상품 주문</title>
+    <style>
+        .signup label {
+            float: left;
+            font-size: 16px;
+            width: 120px;
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
     <form>
         <fieldset>
             <legend>상품 선택</legend>
@@ -19,7 +30,7 @@
         </fieldset>
         <fieldset>
             <legend>배송 정보</legend>
-            <ul>
+            <ul class="signup label">
                 <li>
                     <label for="name">이름 : </label>
                     <input type="text" id="name">
@@ -37,11 +48,11 @@
                     <input type="text" id="phone" placeholder="하이픈 빼고 입력해 주세요.(예:01012345678)">
                 </li>
                 <li>
-                    <label for="ymd">배송 날짜</label>
+                    <label for="ymd">배송 날짜 : </label>
                     <input type="date" id="ymd"><small>(주문일로부터 최소 3일 이후)</small>
                 </li>
                 <li>
-                    <label for="memo">메모</label>
+                    <label for="memo">메모 : </label>
                     <textarea id="memo" cols="40" rows="4"></textarea>
                 </li>
             </ul>
@@ -51,5 +62,5 @@
             <input type="reset" value="취소하기">
         </div>
     </form>
- </body>
+</body>
 </html>
