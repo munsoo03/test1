@@ -1,22 +1,53 @@
 <!doctype html>
 <html lang="ko">
- <head>
-  <meta charset = "utf-8">
-  <title>상품 소개</title>
- </head>
- <body>
+
+<head>
+    <meta charset="utf-8">
+    <title>상품 소개</title>
+    <style>
+        .round1 {
+            border: 2px solid rgb(236, 218, 52);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #pos1 {
+            margin: 10px;
+        }
+
+        #pos2 {
+            width: 500px;
+        }
+
+        .세로박스{
+            display: flex;
+
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
     <div>
         <fieldset>
             <legend>상품 소개</legend>
-            <h1>이문수</h1>
+            <h1 style="color: rgb(211, 180, 43)">이문수</h1>
             <p>멋있고 깜찍하고 섹시한 그를 지금 사신다면 추가로 이문수 이모티콘까지 서비스?!</p>
+            <p>이거 놓치면 후회하겠는걸? 사고싶다면 바로 밑에 있는 "회원가입 페이지" 를 클릭해!</p>
         </fieldset>
         <form>
             <input type="button" value="회원 가입 페이지" onclick="window.open('login.html')">
         </form>
     </div>
-    <div>
-        <img src="gamja.jpg" alt="이문수">
+    <div class="세로박스">
+        <img class="round1" id="pos1" src="gamja.jpg" alt="이문수">
+        <img class="round1" id="pos2" src="gamja1.jpg" alt="많은 이문수">
     </div>
- </body>
+</body>
+
+<!-- shift + alt + f : 자동 정렬 -->
+
+
 </html>
